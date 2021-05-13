@@ -1,0 +1,4 @@
+{
+	"repo": "ohmyzsh/ohmyzsh", 
+	"desired_labels": ["Feature", "Enhancement", "Bug", "Support", "Type: documentation"]
+}

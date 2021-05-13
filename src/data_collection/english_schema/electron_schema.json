@@ -1,0 +1,4 @@
+{
+	"repo": "electron/electron", 
+	"desired_labels": [enhancement :sparkles:, "bug :beetle:", "crash :boom:", "documentation :notebook:"]
+}

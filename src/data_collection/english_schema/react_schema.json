@@ -1,0 +1,4 @@
+{
+	"repo": "facebook/react", 
+	"desired_labels": ["Type: Enhancement", "Type: Feature Request", "Type: Bug", "Type: Question"]
+}

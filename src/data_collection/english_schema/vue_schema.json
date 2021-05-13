@@ -1,0 +1,4 @@
+{
+	"repo": "vuejs/vue", 
+	"desired_labels": ["feature request", "bug"]
+}

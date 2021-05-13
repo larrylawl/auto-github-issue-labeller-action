@@ -1,0 +1,4 @@
+{
+	"repo": "twbs/bootstrap", 
+	"desired_labels": ["feature", "confirmed", "docs"]
+}

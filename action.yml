@@ -1,0 +1,36 @@
+# action.yml
+name: 'Auto Github Issue Labeller'
+description: 'Automatically labels github issues as either "bug", "feature", "docs" or "others". '
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github Personal Access Token'
+    required: true
+  CONFIDENCE:
+    description: 'Skips prediction when below confidence threshold.
+    Select from interval [-10, 4]. '
+    required: true
+    default: "2"
+  REPOSITORY:
+    description: 'Github Repository to label'
+    required: true
+    default: "larrylawl/Auto-Github-Issue-Labeller"
+  FEATURE:
+    description: 'Issue label name for "features"'
+    required: true
+    default: "enhancement"
+  BUG:
+    description: 'Issue label name for "bug"'
+    required: true
+    default: "bug"
+  DOCS:
+    description: 'Issue label name for "docs"'
+    required: true
+    default: "documentation"
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        echo ${{inputs.CONFIDENCE}}
+        docker pull larrylawl/labeller:latest
+        docker run -e GITHUB_TOKEN=${{inputs.GITHUB_TOKEN}} -e REPOSITORY=${{inputs.REPOSITORY}} -e CONFIDENCE=${{inputs.CONFIDENCE}} -e FEATURE=${{inputs.FEATURE}} -e BUG=${{inputs.BUG}} -e DOCS=${{inputs.DOCS}} larrylawl/labeller
+      shell: bash

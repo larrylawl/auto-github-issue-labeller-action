@@ -1,0 +1,4 @@
+{
+	"repo": "tensorflow/tensorflow", 
+	"desired_labels": ["type:feature", "type:bug", "type:docs-feature", "type:docs-bug", "type:build/install", "type:performance", "type:support", "type:others"]
+}

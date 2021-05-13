@@ -1,0 +1,15 @@
+pipeline/pickles/*
+logs
+data
+results
+final_model
+.env
+
+node_modules
+.ipynb_checkpoints/
+.idea
+.DS_Store
+.python-version
+src/__pycache__
+runs
+pipeline/scripts/__pycache__

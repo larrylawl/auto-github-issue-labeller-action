@@ -1,0 +1,4 @@
+{
+	"repo": "flutter/flutter", 
+	"desired_labels": ["severe: new feature", "severe: crash", "severe: performance", "severe: rendering", "severe: regression", "documentation"]
+}

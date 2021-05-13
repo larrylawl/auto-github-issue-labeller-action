@@ -1,0 +1,4 @@
+{
+	"repo": "microsoft/vscode", 
+	"desired_labels": ["feature-request", "api-proposal", "bug", "debt", "polish"]
+}
