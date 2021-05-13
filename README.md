@@ -1,4 +1,5 @@
 # Auto Github Issue Labeller Action
+![Workflow](https://github.com/larrylawl/Auto-Github-Issue-Labeller/actions/workflows/main.yml/badge.svg)
 
 This action automatically labels your github issues as ![bug](https://img.shields.io/badge/-bug-f00.svg)
 , ![enhancement](https://img.shields.io/badge/-enhancement-32a4a8.svg)
