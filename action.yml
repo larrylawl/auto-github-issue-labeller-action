@@ -1,6 +1,10 @@
 # action.yml
 name: 'Auto Github Issue Labeller'
 description: 'Automatically labels github issues as either "bug", "feature", "docs" or "others". '
+author: 'Larry Law, Liu Ze Chu, Ng Tek In, Derek Hardy'
+branding:
+  icon: 'tag'
+  color: 'white'
 inputs:
   GITHUB_TOKEN:
     description: 'Github Personal Access Token'
