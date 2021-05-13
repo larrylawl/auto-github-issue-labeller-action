@@ -39,3 +39,10 @@ python pipeline/scripts/seq_classifier.py
 
 You can further modify the options within the file.
 
+## Creating docker image
+Ensure that final model (available [here](https://drive.google.com/file/d/1JO_I8GNDDwLY4hIeySdhIMwI23kM7Ijx/view?usp=sharing]).) is downloaded in the root directory. 
+To create the docker image, 
+
+```
+docker build --tag %image-name 
+```

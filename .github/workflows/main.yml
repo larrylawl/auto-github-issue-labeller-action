@@ -16,4 +16,3 @@ jobs:
         FEATURE: "enhancement"
         BUG: "bug"
         DOCS: "documentation"
-    # Use the output from the `hello` step
