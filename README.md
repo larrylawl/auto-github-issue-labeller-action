@@ -67,6 +67,9 @@ Well beats the regex-baseline classifier, which achieved F1 score of 0.3634 and 
 ## Citation
 This action accompanies our paper [here](TODO). To run the code accompanying our paper, refer to
 `paper.md` If you found this action useful, consider citing us at 
+
 ```
 TODO
 ```
+
+This work is done in collaboration with Ze Chu (@LiuZechu), Tek In (@OWN463), and Derek (@Derek-Hardy). 
