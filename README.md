@@ -76,7 +76,7 @@ jobs:
 To plug-and-play this action, simply copy `{ROOT}/.github/workflows/main.yaml` from this repository to your own;
 remember to keep the same directories to trigger github actions.
 
-## Citation
+## Credits
 
 This action accompanies our paper [here](report.pdf). To run the code accompanying our paper, refer to
 `paper.md`
@@ -85,3 +85,12 @@ This work is done in collaboration with [Ze Chu](https://github.com/LiuZechu), [
 and [Derek](https://github.com/Derek-Hardy), as part of the module [CS4248](https://knmnyn.github.io/cs4248-2020/)
 offered by [A/P Kan Min Yen](https://www.comp.nus.edu.sg/~kanmy/) from
 the [National University of Singapore](https://www.comp.nus.edu.sg).
+
+## FAQ
+
+If you ran into this error 
+
+`! [remote rejected] master -> master (refusing to allow an OAuth App to create or update workflow .github/workflows/file.yml without workflow scope)`
+
+Consider updating your Github credentials with a Personal Access Token that enables workflow. Specified by
+@eirikvaa's response in this [link](https://stackoverflow.com/questions/64059610/how-to-resolve-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-on#_=_).
