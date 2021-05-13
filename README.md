@@ -79,7 +79,7 @@ remember to keep the same directories to trigger github actions.
 
 ## Credits
 
-This action accompanies our paper [here](report.pdf). To run the code accompanying our paper, refer to
+This action accompanies our [paper](report.pdf) and [poster](poster.pdf). To run the code accompanying our paper, refer to
 `paper.md`
 
 This work is done in collaboration with [Ze Chu](https://github.com/LiuZechu), [Tek In](https://github.com/0WN463),
