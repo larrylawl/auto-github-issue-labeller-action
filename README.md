@@ -70,7 +70,7 @@ Well beats the regex-baseline classifier, which achieved F1 score of 0.3634 and 
 **Only NLP-based auto labeller in the marketplace at time of writing**. Transfer learning with BERT under the hood.
 
 ## Citation
-This action accompanies our paper [here](TODO). To run the code accompanying our paper, refer to
+This action accompanies our paper [here](report.pdf). To run the code accompanying our paper, refer to
 `paper.md` 
 
 This work is done in collaboration with [Ze Chu](https://github.com/LiuZechu), [Tek In](https://github.com/0WN463), and [Derek](https://github.com/Derek-Hardy),
