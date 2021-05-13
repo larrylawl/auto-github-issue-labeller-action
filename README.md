@@ -2,7 +2,7 @@
 
 This action automatically labels your github issues as ![bug](https://img.shields.io/badge/-bug-f00.svg)
 , ![enhancement](https://img.shields.io/badge/-enhancement-32a4a8.svg)
-![documentation](https://img.shields.io/badge/-Documentation-informational), or skips labelling when unconfident using
+![documentation](https://img.shields.io/badge/-documentation-informational), or skips labelling when unconfident using
 Natural Language Processing. Some details:
 
 - Action is triggered whenever an issue is created or editted.
