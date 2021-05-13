@@ -15,8 +15,7 @@ For a demo, simply post an issue in our repository!
 
 ## Why should you use our NLP labeller?
 
-**Works out of the box.** No need to come up with regexes (traditional approach). No dependencies added to your
-codebase.
+**Works out of the box.** No need to come up with regexes (traditional approach). No additional dependencies or storage space for models needed.
 
 **Works well.** On our test repositories (`Flutter`, `OhMyZsh`, and `Electron`), our classifier achieved F1 score of
 0.8758 and accuracy score of 0.8785. Well beats the regex-baseline classifier, which achieved F1 score of 0.3634 and
