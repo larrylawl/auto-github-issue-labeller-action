@@ -10,7 +10,7 @@ Natural Language Processing. Some details:
 
 - Action adds (not replace) existing labels of the issue.
 
-- Disclaimer: auto-labelling takes ~2 minutes to process (as our docker image is pretty large).
+- **Disclaimer: auto-labelling takes ~2 minutes to process (as our docker image is pretty large).**
 
 For a demo, simply post an issue in our repository!
 
@@ -74,8 +74,7 @@ jobs:
 
 ```
 
-To plug-and-play this action, simply copy `{ROOT}/.github/workflows/main.yaml` from this repository to your own;
-remember to keep the same directories to trigger github actions.
+To plug-and-play this action, simply copy `{ROOT}/.github/workflows/main.yaml` from this repository to the same path of your own repository (i.e. `{ROOT}/.github/workflows/main.yaml`). The directory path needs to be respected in order to trigger github actions.
 
 ## Credits
 
