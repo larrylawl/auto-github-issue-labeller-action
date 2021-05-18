@@ -9,7 +9,8 @@ from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassific
 
 from utils import remove_code_block, remove_url
 
-# load_dotenv()
+load_dotenv()  # for local development
+DELTA = int(os.environ.get("DELTA"))
 SECRET_TOKEN = os.environ.get("GITHUB_TOKEN")
 REPOSITORY = os.environ.get("REPOSITORY")
 CONFIDENCE = int(os.environ.get("CONFIDENCE"))
@@ -61,10 +62,8 @@ def main():
     ## For some reasons, when set to now(), the REST API returns nothing.
     ## So we add some interval
     payload = {
-        "since": (datetime.datetime.now() - datetime.timedelta(days=1)).isoformat()
+        "since": (datetime.datetime.now() - datetime.timedelta(days=DELTA)).isoformat()
     }
-
-    past_issues = set()
 
     res = s.get(f'https://api.github.com/repos/{REPOSITORY}/issues', headers=headers, params=payload)
     time.sleep(3)
@@ -74,11 +73,10 @@ def main():
         for issue in res:
             issue_num = int(issue['url'].split('/')[-1])
 
-            if issue_num not in past_issues:
+            if not issue["labels"]:  # only label unlabelled issues
                 label = classify(issue['title'], issue['body'])
                 add_label(issue_num, label)
                 print(f"Classified issue {issue_num} as {label}.")
-                past_issues.add(issue_num)
 
 
 if __name__ == "__main__":
