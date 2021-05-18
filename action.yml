@@ -35,11 +35,15 @@ inputs:
     description: 'Issue label name for "docs"'
     required: true
     default: "documentation"
+  VERSION:
+    description: 'Version of action to use.'
+    required: true
+    default: "v1.0"
 runs:
   using: "composite"
   steps:
     - run: |
         echo ${{inputs.CONFIDENCE}}
-        docker pull larrylawl/labeller:latest
+        docker pull larrylawl/labeller:{{inputs.VERSION}}
         docker run -e GITHUB_TOKEN=${{inputs.GITHUB_TOKEN}} -e REPOSITORY=${{inputs.REPOSITORY}} -e DELTA=${{inputs.DELTA}} -e CONFIDENCE=${{inputs.CONFIDENCE}} -e FEATURE=${{inputs.FEATURE}} -e BUG=${{inputs.BUG}} -e DOCS=${{inputs.DOCS}} larrylawl/labeller
       shell: bash

@@ -50,6 +50,9 @@ model to make a prediction for all issues.
 `DOCS`
 **Optional** Issue label name for `docs`-type issues. Default value is `documentation`.
 
+`Version`
+**Optional** Version of action to use. Default value is `v1.0` (latest version).
+
 ## Outputs
 
 Adds labels to the issue.
@@ -76,7 +79,7 @@ jobs:
         FEATURE: "enhancement"
         BUG: "bug"
         DOCS: "documentation"
-
+        VERSION: "v1.0"
 ```
 
 To plug-and-play this action, simply copy `{ROOT}/.github/workflows/main.yaml` from this repository to the same path of your own repository (i.e. `{ROOT}/.github/workflows/main.yaml`). The directory path needs to be respected in order to trigger github actions.
