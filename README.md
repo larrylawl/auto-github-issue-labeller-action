@@ -59,22 +59,23 @@ Adds labels to the issue.
 ```yaml
 on:
   issues:
-    types: [ opened, edited ]
+    types: [opened, edited]
 
 jobs:
   auto_label:
     runs-on: ubuntu-latest
     name: Automatic Github Issue Labeller
     steps:
-      - name: Label Step
-        uses: larrylawl/Auto-Github-Issue-Labeller@main
-        with:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          REPOSITORY: ${{github.repository}}
-          CONFIDENCE: "2"
-          FEATURE: "enhancement"
-          BUG: "bug"
-          DOCS: "documentation"
+    - name: Label Step
+      uses: larrylawl/Auto-Github-Issue-Labeller@main
+      with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        REPOSITORY: ${{github.repository}}
+        DELTA: "1"
+        CONFIDENCE: "2"
+        FEATURE: "enhancement"
+        BUG: "bug"
+        DOCS: "documentation"
 
 ```
 
