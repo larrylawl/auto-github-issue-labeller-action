@@ -9,6 +9,11 @@ inputs:
   GITHUB_TOKEN:
     description: 'Github Personal Access Token'
     required: true
+  DELTA:
+    description: 'Every trigger labels issues up to %DELTA days back. Primary purpose is to label
+                  pre-existing issues on initial setup.'
+    required: true
+    default: "1"
   CONFIDENCE:
     description: 'Skips prediction when below confidence threshold.
     Select from interval [-10, 4]. '

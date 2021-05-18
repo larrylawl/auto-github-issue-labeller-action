@@ -8,7 +8,7 @@ Natural Language Processing. Some details:
 
 - Action is triggered whenever an issue is created or editted.
 
-- Action adds (not replace) existing labels of the issue.
+- Action only labels unlabelled issue
 
 - **Disclaimer: auto-labelling takes ~2 minutes to process (as our docker image is pretty large).**
 
@@ -31,6 +31,10 @@ accuracy score of 0.5267.
 
 `REPOSITORY`
 **Optional** Repository to auto-label. Uses current repository `${{github.repository}}` as default.
+
+`DELTA`
+**Optional** Every trigger labels issues up to %DELTA days back. Primary purpose is to label
+pre-existing issues on initial setup. Default value is 1.
 
 `CONFIDENCE`
 **Optional** Skips prediction when below confidence threshold. As model confidence output is in logits, please pick a
