@@ -50,7 +50,7 @@ model to make a prediction for all issues.
 `DOCS`
 **Optional** Issue label name for `docs`-type issues. Default value is `documentation`.
 
-`Version`
+`VERSION`
 **Optional** Version of action to use. Default value is `v1.0` (latest version).
 
 ## Outputs
